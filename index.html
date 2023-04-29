@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audioplayer</title>
+    <link rel="stylesheet" href="src/style/main.css">
+    <link rel="stylesheet" href="src/style/buttons.css">
+    <script src="src/js/app.js"></script>
+    <script src="src/js/track_selection.js"></script>
+    <script src="src/js/visualization.js"></script>
+</head>
+<body onload="start()">
+<div class="background"></div>
+<canvas id="visualisation"></canvas>
+<div class="music_control_div">
+    <div class="track_selection">
+        <button id="phantom_button">
+            <img src="src/img/jpg/phantom.jpg" id="phantom_img">
+        </button>
+        <button id="whatsapp_button">
+            <img src="src/img/jpg/whatsapp.jpg" id="whatsapp_img">
+        </button>
+        <button id="white_trash_button">
+            <img src="src/img/jpg/white_trash.jpg" id="white_trash_img">
+        </button>
+    </div>
+    <span id="track_name"></span>
+    <input type="range" min="0" max="100" steps="1" value="100" class="controller" id="time_controller">
+    <button id="previous">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="24" transform="rotate(-180 24 24)" fill="url(#paint0_linear_7_33)"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.6316 13L9 23.8875L23.6316 34.775L23.6316 27.334L33.6316 34.7751L33.6316 13.0001L23.6316 20.4412V13Z" fill="#00F0FF"/>
+            <defs>
+                <linearGradient id="paint0_linear_7_33" x1="24" y1="0" x2="24" y2="48" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#04D457"/>
+                    <stop offset="1" stop-color="#D80101"/>
+                </linearGradient>
+            </defs>
+        </svg>
+    </button>
+    <button id="pause">
+        <svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="41" cy="41" r="41" transform="rotate(-180 41 41)" fill="url(#paint0_linear_26_8)"/>
+            <rect x="49" y="17" width="12" height="48" fill="#00F0FF"/>
+            <rect x="20" y="17" width="12" height="48" fill="#00F0FF"/>
+            <defs>
+                <linearGradient id="paint0_linear_26_8" x1="41" y1="0" x2="41" y2="82" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#04D457"/>
+                    <stop offset="1" stop-color="#D80101"/>
+                </linearGradient>
+            </defs>
+        </svg>
+
+    </button>
+    <button id="play">
+        <svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="41" cy="41" r="40.5" transform="rotate(-180 41 41)" fill="url(#paint0_linear_7_59)"/>
+            <path d="M63 41L28 67L28 15L63 41Z" fill="#00F0FF"/>
+            <defs>
+                <linearGradient id="paint0_linear_7_59" x1="41" y1="0" x2="41" y2="82" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#04D457"/>
+                    <stop offset="1" stop-color="#D80101"/>
+                </linearGradient>
+            </defs>
+        </svg>
+    </button>
+    <button id="next">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M47.5 24C47.5 36.9787 36.9787 47.5 24 47.5C11.0213 47.5 0.5 36.9787 0.5 24C0.5 11.0213 11.0213 0.5 24 0.5C36.9787 0.5 47.5 11.0213 47.5 24Z" fill="url(#paint0_linear_7_43)"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.3684 35L39 24.1125L24.3684 13.225L24.3684 20.666L14.3684 13.2249L14.3684 34.9999L24.3684 27.5588V35Z" fill="#00F0FF"/>
+            <defs>
+                <linearGradient id="paint0_linear_7_43" x1="24" y1="48" x2="24" y2="-6.25849e-07" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#04D457"/>
+                    <stop offset="1" stop-color="#D80101"/>
+                </linearGradient>
+            </defs>
+        </svg>
+    </button>
+</div>
+
+<input type="range" min="0" max="100" steps="1" value="100" class="controller" id="volume_controller">
+<div class="audio_tracks">
+    <audio id="phantom_audio" controls src="src/tracks/markul-phantom.mp3">
+        <a href="src/tracks/markul-phantom.mp3">Download audio</a>
+    </audio>
+    <audio id="whatsapp_audio" controls src="src/tracks/Blackway,%20Black%20Caviar%20What's_Up_Danger.mp3">
+        <a href="src/tracks/Blackway,%20Black%20Caviar%20What's_Up_Danger.mp3">Download audio</a>
+    </audio>
+    <audio id="white_trash_audio" controls src="src/tracks/boulevard%20depo%20-%20White%20Trash.mp3">
+        <a href="src/tracks/boulevard%20depo%20-%20White%20Trash.mp3">Download audio</a>
+    </audio>
+</div>
+</body>
+</html>
+
+

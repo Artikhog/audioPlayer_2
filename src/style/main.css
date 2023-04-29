@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(circle, #666, #222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#time_controller{
+    position: absolute;
+    width: 394px;
+    height: 23px;
+    left: 559px;
+    top: 589px;
+
+    background: linear-gradient(90deg, #0019FF 0%, #D60E0E 100%);
+}
+
+#volume_controller {
+    position: absolute;
+    width: 394px;
+    height: 23px;
+    right: -130px;
+    top: 250px;
+    transform: rotate(-90deg);
+
+    background: linear-gradient(90deg, #0019FF 0%, #D60E0E 100%);
+}
+.music_control_div{
+    position: absolute;
+    width: 574px;
+    height: 574px;
+    left: 469px;
+    top: 100px;
+
+    background: #00868F;
+    border-radius: 393px;
+}
+
+audio{
+    display: none;
+}
+
+canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+span{
+    position: absolute;
+    width: 400px;
+    height: 25%;
+    top: 305px;
+    margin-left: 15%;
+    margin-right: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 47px;
+}
+

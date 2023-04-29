@@ -1,0 +1,58 @@
+#previous{
+    position: absolute;
+    bottom: 100px;
+    left: 170px;
+}
+
+#pause{
+    display: none;
+    position: absolute;
+    bottom: 80px;
+    left: 245px;
+}
+
+#play{
+    display: block;
+    position: absolute;
+    bottom: 80px;
+    left: 245px;
+}
+
+#next{
+    position: absolute;
+    bottom: 100px;
+    left: 350px;
+}
+
+button{
+    background: #00868F;
+    border-radius: 50px;
+}
+
+#time_controller{
+    position: absolute;
+    top: 360px;
+    left: 90px;
+    background: linear-gradient(90deg, #0019FF 0%, #D60E0E 100%);
+}
+
+.track_selection{
+    position: absolute;
+    width: 500px;
+    height: 158px;
+    left: 40px;
+    top: 140px;
+    background: #00868F;
+    border-radius: 50px;
+}
+
+.track_selection button{
+    width: 160px;
+    height: 160px;
+}
+
+.track_selection img{
+    width: 158px;
+    height: 158px;
+    border-radius: 50px;
+}
