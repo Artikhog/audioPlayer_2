@@ -66,15 +66,9 @@ span{
     line-height: 47px;
 }
 
-#dropzone{
-    width: 100px;
-    height: 100px;
-    display: flex;
+#description {
     position: absolute;
-    left: 0;
+    left: -150px;
     top: 0;
-    border: 1px dashed #ddd;
-    border-radius: 10%;
-    cursor: pointer;
 }
 
