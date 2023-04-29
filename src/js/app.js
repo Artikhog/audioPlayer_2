@@ -7,7 +7,6 @@ function start() {
     init_btn();
     add_listeners();
 }
-
 function init_btn() {
     play_btn = document.getElementById('play');
     pause_btn = document.getElementById('pause');

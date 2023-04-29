@@ -37,7 +37,6 @@ class Visualization {
         setInterval(() => {
             this.visualization();
         }, 25);
-
     }
     visualization() {
         this.ctx.clearRect(0, 0, 2000, 2000);

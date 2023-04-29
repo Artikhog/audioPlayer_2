@@ -8,6 +8,7 @@ class Track_Selector{
 
     }
     init() {
+
         this.audio_array.push(document.getElementById('phantom_audio'));
         this.audio_array.push(document.getElementById('whatsapp_audio'));
         this.audio_array.push(document.getElementById('white_trash_audio'));
